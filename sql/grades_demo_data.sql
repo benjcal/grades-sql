@@ -1,6 +1,6 @@
 -- Add courses
-INSERT INTO courses (course_name, course_short_name) VALUES ('Linear Algebra', 'MTH316');
-INSERT INTO courses (course_name, course_short_name) VALUES ('Cool Science II', 'SCI442');
+INSERT INTO courses (course_name, course_id) VALUES ('Linear Algebra', 'MTH316');
+INSERT INTO courses (course_name, course_id) VALUES ('Cool Science II', 'SCI442');
 
 -- Add students
 INSERT INTO students (first_name, last_name, student_id) VALUES ('Albert', 'Einstein', 'st5562');

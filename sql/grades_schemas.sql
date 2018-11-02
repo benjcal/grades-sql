@@ -5,7 +5,7 @@ DROP TABLE IF EXISTS courses;
 CREATE TABLE courses (
 	_id					INTEGER PRIMARY KEY AUTOINCREMENT,
 	course_name			TEXT,
-	course_short_name	TEXT
+	course_id			TEXT
 );
 
 
@@ -39,7 +39,7 @@ CREATE TABLE grades (
 	ref_student			INTEGER NOT NULL,
 	grade 				REAL NOT NULL,
 
-	FOREIGN KEY(ref_activity) REFERENCES activities(id),
-	FOREIGN KEY(ref_student) REFERENCES students(id)
+	FOREIGN KEY(ref_activity) REFERENCES activities(_id),
+	FOREIGN KEY(ref_student) REFERENCES students(_id)
 );
 
