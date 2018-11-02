@@ -8,7 +8,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "db_init": "sqlite3 grades.db < sql/grades_schemas.sql; sqlite3 grades.db < sql/grades_views.sql; sqlite3 grades.db < sql/grades_demo_data.sql;"
   },
   "keywords": [],
   "author": "",

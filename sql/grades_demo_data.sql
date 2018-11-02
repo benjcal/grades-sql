@@ -21,3 +21,5 @@ INSERT INTO grades (ref_activity, ref_student, grade) VALUES (1, 2, 15);
 INSERT INTO grades (ref_activity, ref_student, grade) VALUES (2, 2, 76);
 INSERT INTO grades (ref_activity, ref_student, grade) VALUES (3, 2, 10);
 INSERT INTO grades (ref_activity, ref_student, grade) VALUES (4, 2, 92);
+
+

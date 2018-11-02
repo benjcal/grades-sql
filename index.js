@@ -3,7 +3,20 @@ const db = new Database('grades.db')
 
 
 // Create Student
-const createStudent = db.prepare( 'INSERT INTO students (first_name, last_name, student_id) VALUES (@firstName, @lastName, @studentId)' )
+const createStudent = db.prepare(`
+	INSERT INTO students (
+			first_name,
+			last_name,
+			student_id
+		)
+		VALUES (
+			@firstName,
+			@lastName,
+			@studentId
+		)`
+	)
+
+// TEST Function
 createStudent.run (
 	{
 		firstName: 'ben',
@@ -22,7 +35,7 @@ const getStudent = db.prepare('SELECT * FROM students WHERE student_id = @studen
 getStudent.get( {studentId: '1234'} )
 
 // TODO: Update Student
-
+UPDATE students SET first_name = @fistName, last_name = @lastName, student_id = @studentId WHERE _id = @id
 // TODO: Delete Student
 
 

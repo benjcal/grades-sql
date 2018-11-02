@@ -15,7 +15,7 @@ CREATE TABLE students (
 	_id					INTEGER PRIMARY KEY AUTOINCREMENT,
 	first_name 			TEXT,
 	last_name 			TEXT,
-	student_id 			TEXT
+	student_id 			TEXT UNIQUE
 );
 
 
@@ -25,7 +25,7 @@ CREATE TABLE activities (
 	_id					INTEGER PRIMARY KEY AUTOINCREMENT,
 	activity_name		TEXT,
 	total_points 		REAL,
-	ref_course 		INTEGER NOT NULL,
+	ref_course 			INTEGER NOT NULL,
 
 	FOREIGN KEY(ref_course) REFERENCES courses(_id)
 );
