@@ -1,0 +1,30 @@
+{
+    "students": [
+        {
+            "firstName": "Ben",
+            "lastName": "Cal",
+            "studentId": "st10"
+        },
+        {
+            "firstName": "Albert",
+            "lastName": "Einstein",
+            "studentId": "st11"
+        },
+        {
+            "firstName": "Abe",
+            "lastName": "Lincoln",
+            "studentId": "st12"
+        }
+    ],
+    "courses": [
+        {
+            "courseName": "Liner Algebra",
+            "courseId": "MTH314"
+        },
+        {
+            "courseName": "Cool Science",
+            "courseId": "SCI466"
+        }
+    ]
+
+}

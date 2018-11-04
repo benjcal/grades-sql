@@ -10,8 +10,8 @@
     "jest": "^23.6.0"
   },
   "scripts": {
-    "test": "npm run deb_init; jest",
-    "db_init": "sqlite3 grades.db < sql/grades_schemas.sql; sqlite3 grades.db < sql/grades_demo_data.sql;"
+    "test": "npm run db_init; jest",
+    "db_init": "sqlite3 grades.db < sql/grades_schemas.sql"
   },
   "keywords": [],
   "author": "",
