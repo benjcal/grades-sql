@@ -6,9 +6,12 @@
   "dependencies": {
     "better-sqlite3": "^5.0.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "jest": "^23.6.0"
+  },
   "scripts": {
-    "db_init": "sqlite3 grades.db < sql/grades_schemas.sql; sqlite3 grades.db < sql/grades_views.sql; sqlite3 grades.db < sql/grades_demo_data.sql;"
+    "test": "npm run deb_init; jest",
+    "db_init": "sqlite3 grades.db < sql/grades_schemas.sql; sqlite3 grades.db < sql/grades_demo_data.sql;"
   },
   "keywords": [],
   "author": "",
