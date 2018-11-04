@@ -25,6 +25,18 @@
             "courseName": "Cool Science",
             "courseId": "SCI466"
         }
+    ],
+    "activities": [
+        {
+            "activityName": "Quiz 1",
+            "totalPoints": 20,
+            "courseId": "MTH314"
+        },
+        {
+            "activityName": "Exam 1",
+            "totalPoints": 80,
+            "courseId": "MTH314"
+        }
     ]
 
 }
